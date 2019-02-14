@@ -5,10 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Solver\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\SudokuSolver.Models\SudokuSolver.Models.csproj" />
     <ProjectReference Include="..\SudokuSolver.Repository\SudokuSolver.Repository.csproj" />
   </ItemGroup>
