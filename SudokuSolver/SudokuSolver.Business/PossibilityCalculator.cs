@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using SudokuSolver.Business.Interfaces;
 using SudokuSolver.Models;
 
 namespace SudokuSolver.Business

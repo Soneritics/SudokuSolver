@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SudokuSolver.Business
+namespace SudokuSolver.Business.Interfaces
 {
     public interface IPossibilityCalculator
     {
