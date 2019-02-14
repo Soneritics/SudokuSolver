@@ -14,7 +14,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SudokuSolver.Business\SudokuSolver.Business.csproj" />
-    <ProjectReference Include="..\SudokuSolver.Repository\SudokuSolver.Repository.csproj" />
   </ItemGroup>
 
 </Project>

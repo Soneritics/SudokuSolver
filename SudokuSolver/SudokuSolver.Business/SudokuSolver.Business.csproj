@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SudokuSolver.Models\SudokuSolver.Models.csproj" />
-    <ProjectReference Include="..\SudokuSolver.Repository\SudokuSolver.Repository.csproj" />
   </ItemGroup>
 
 </Project>
