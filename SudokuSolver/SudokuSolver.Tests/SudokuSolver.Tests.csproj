@@ -12,4 +12,9 @@
     <PackageReference Include="MSTest.TestFramework" Version="1.3.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SudokuSolver.Business\SudokuSolver.Business.csproj" />
+    <ProjectReference Include="..\SudokuSolver.Repository\SudokuSolver.Repository.csproj" />
+  </ItemGroup>
+
 </Project>
