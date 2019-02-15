@@ -18,9 +18,9 @@ namespace SudokuSolver.Business
         }
 
         // Calculate the total number of possibilities
-        public int GetPossibilities()
+        public long GetPossibilities()
         {
-            var possibilities = 0;
+            long possibilities = 0;
 
             for (var line = 0; line < _board.Lines; line++)
             {
