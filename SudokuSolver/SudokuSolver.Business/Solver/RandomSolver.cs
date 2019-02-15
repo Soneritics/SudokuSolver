@@ -34,7 +34,7 @@ namespace SudokuSolver.Business.Solver
         private Board GetRandomBoard(string hash)
         {
             var result = _boardHash.LoadFromHash(hash);
-            var possibilityCalculator = new PossibilityCalculator(result);
+            var possibilityCalculator = new PossibilityCalculator(_boardHash.LoadFromHash(hash));
 
             for (var line = 0; line < result.Lines; line++)
             {
