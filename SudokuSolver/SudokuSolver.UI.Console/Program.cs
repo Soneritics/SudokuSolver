@@ -11,7 +11,10 @@ namespace SudokuSolver.UI.Console
             System.Console.WriteLine("Board values in 1 line. x for unknown value. ");
             var hash = System.Console.ReadLine();
 
-            System.Console.WriteLine("\n\nStarting solving..");
+            var boardHash = new BoardHash();
+            var stats = new BoardStatistics(boardHash.LoadFromHash(hash), new PossibilityCalculator(boardHash.LoadFromHash(hash)));
+
+            System.Console.WriteLine($"\n\nStarting solving. There are {stats.GetPossibilities()} possibilities..");
 
             var solver = new RandomSolver();
             var result = solver.Solve((new BoardHash()).LoadFromHash(hash));
