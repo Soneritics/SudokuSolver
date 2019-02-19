@@ -8,7 +8,6 @@ namespace SudokuSolver.UI.Console
     {
         static void Main(string[] args)
         {
-            System.Console.WriteLine("Board values in 1 line. x for unknown value. ");
             var hash = System.Console.ReadLine();
 
             var boardHash = new BoardHash();
@@ -16,7 +15,7 @@ namespace SudokuSolver.UI.Console
 
             System.Console.WriteLine($"\n\nStarting solving. There are {stats.GetPossibilities()} possibilities..");
 
-            var solver = new RandomSolver();
+            var solver = new BruteForceSolver();
             var result = solver.Solve((new BoardHash()).LoadFromHash(hash));
 
             System.Console.WriteLine($"Solved in {solver.Attempts} attempts.\n\n");
