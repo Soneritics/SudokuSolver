@@ -8,6 +8,7 @@ namespace SudokuSolver.UI.Console
     {
         static void Main(string[] args)
         {
+            System.Console.WriteLine("Insert the board hash as 1 long line:");
             var hash = System.Console.ReadLine();
 
             var boardHash = new BoardHash();

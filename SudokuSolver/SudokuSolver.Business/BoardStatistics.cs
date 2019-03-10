@@ -18,9 +18,9 @@ namespace SudokuSolver.Business
         }
 
         // Calculate the total number of possibilities
-        public long GetPossibilities()
+        public ulong GetPossibilities()
         {
-            long possibilities = 0;
+            ulong possibilities = 0;
 
             for (var line = 0; line < _board.Lines; line++)
             {
@@ -31,7 +31,7 @@ namespace SudokuSolver.Business
                     if (value == 0)
                     {
                         possibilities = possibilities == 0 ? 1 : possibilities;
-                        possibilities *= _possibilityCalculator.PossibilitiesFor(line, column).Count;
+                        possibilities *= (ulong)_possibilityCalculator.PossibilitiesFor(line, column).Count;
                     }
                 }
             }

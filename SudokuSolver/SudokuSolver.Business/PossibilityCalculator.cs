@@ -49,6 +49,24 @@ namespace SudokuSolver.Business
                 }
             }
 
+            // Loop grid
+            var x = column / 3;
+            var y = line / 3;
+            for (var gridY = 0; gridY < 3; gridY++)
+            {
+                for (var gridX = 0; gridX < 3; gridX++)
+                {
+                    var offsetX = (x * 3);
+                    var offsetY = (y * 3);
+                    var value = _board.GetBoardValue(offsetY + gridY, offsetX + gridX).Value;
+
+                    if (value > 0)
+                    {
+                        impossibilities.Add(value);
+                    }
+                }
+            }
+
             // Check possible values
             for (var i = 1; i <= 9; i++)
             {
